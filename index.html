@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipt</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            margin-left: 950px;
+        }
+            .recepit-container{
+            width: 80%;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            height: 1000px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(o,o,o,o.2);
+        }
+
+        header{
+            background-color:#f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo{
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .brand-title{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 300;
+            color: black;
+         }
+
+        .collage-address{
+            text-align: center;
+            font-size: 17px;
+        }
+
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+       .student-info{
+        width: 45%;
+        margin: 20px 0;
+        
+        }
+.head{
+    font-family:Arial, Helvetica, sans-serif;
+}
+        .fees-info{
+            width: 45%;
+            margin: 20px 0;
+            
+        }
+
+        .student-info h2, .fees-info h2 {
+            margin-top: 0;
+        }
+        footer{
+            background-color: white;
+            padding: 10px;
+            border-top: 1px solid gray;
+        }
+
+        .recepit-body{
+            position: relative;
+        }
+        .stamp{
+        width: 200px;
+        position: absolute;
+        right: 140px;
+        bottom: -50px;
+        }
+        .signature{
+            text-align: right;
+            margin-top: 80px;
+        }
+
+        /* For mobile  */
+@media  (max-width: 700px) {
+    .receipt-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .student-info, .fees-info {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .stamp {
+        width:180px;
+        position: absolute;
+        top: 420px;
+        right: 60px;
+        margin-top: 420px;
+        font-size: 16px;
+        
+    }
+    header, footer {
+        padding: 8px;
+    }
+}
+
+/*  tablet  */
+@media (min-width: 701px) and (max-width: 1023px) {
+    .receipt-container {
+        width: 85%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    main {
+        flex-direction: row;
+    }
+    .student-info, .fees-info {
+        width: 45%;
+        margin: 20px 0;
+    }
+    .stamp {
+        width: 190px;
+        right: 90px;
+    
+    }
+}
+
+/* Laptop */
+@media (min-width: 801px) and (max-width: 1200) {
+    .receipt-container {
+        width: 60%;
+        margin: 50px auto;
+        padding: 30px
+    }
+
+    .stamp{
+        width: 190px;
+        right: 10px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="recepit-container">
+    <div class="receipt-header">
+        <header>
+    <img src="https://th.bing.com/th/id/OIP.sr7YVg2RNxcUKSbEaMWWVQAAAA?w=165&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="logo" alt="collage logo">
+    <h2 class="brand-title"><b>SIR VISVESVARYA INSTITUTE OF TECHNOLOGY,NASHIK</b></h2>
+    <p class="collage-address">A/p.Chincholi,Tal.Sinnar,Dist.Nashik</p>
+    </header>
+
+    <main>
+        <section class="student-info">
+            <h2>Student Information</h2>
+            <p>Student Name: Pranjal Elamame</p>
+            <p>Student ID: JD001</p>
+            <p>Course: B.Tech</p>
+            <p>Year: 3rd Year </p>
+        </section>
+        <section class="fees-info">
+            <h2>Fees Information</h2>
+            <p>Fees Type: Tuition Fees</p>
+            <p>Fees Amount: ₹47,448</p>
+            <p>Payment Method: Online Banking</p>
+            <p>Payment Date: 15-01-2025</p>
+        </section>
+    </main>
+
+    <div class="receipt-body">
+    
+        <footer>
+            <p>Receipt Number: SM001</p>
+            <p>Date: 15-01-2025</p>
+            <img src="stamp1.jpg" class="stamp" alt="signature-stamp"><Br></Br>
+            <Br>   <Br>   <Br>   <Br>   <Br>   <Br>   <Br>   <Br>   <Br>   <Br>   <Br>    
+              <h2 class="head">Authorized signature</h2>
+
+       
+             </footer>
+            </div>
+    </div>
+</body>
+</html>
